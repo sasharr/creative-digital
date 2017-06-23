@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 
     $('.team-slider').slick({
-        dots: true,
+        dots: false,
         arrows: true,
         speed: 300,
         slidesToShow: 3,

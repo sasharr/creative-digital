@@ -190,7 +190,20 @@ a {
 .our-team {
   text-align: center;
   padding: 2% 0; }
+  .our-team__heading {
+    color: #665f60;
+    font-weight: 500; }
 
+.team-slider__heading {
+  color: #9f9acf;
+  font-family: "Proxima Nova",sans-serif;
+  font-size: 24px;
+  font-weight: 700; }
+.team-slider__text {
+  color: #665f60;
+  font-family: "PT Sans";
+  font-size: 24px;
+  font-style: italic; }
 .team-slider__slide {
   margin: 0 10px;
   background: linear-gradient(to bottom, #ebebeb 0%, #ebebeb 31%, #ffffff 31%, #ffffff 100%); }
@@ -198,8 +211,25 @@ a {
 .team-slider__slide > img {
   margin: 0 auto; }
 
-.sotials {
+.sotial {
   background: #9f9acf;
-  padding: 5px 10px; }
+  padding: 15px 10px; }
+  .sotial__list {
+    display: inline-block; }
+  .sotial__link {
+    display: block;
+    background: #ebebeb;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    text-align: center;
+    color: #9f9acf;
+    font-size: 18px;
+    margin: 0 2px; }
+    .sotial__link i {
+      vertical-align: sub; }
+
+footer {
+  background: #9f9acf; }
 
 /*# sourceMappingURL=main.css.map */
