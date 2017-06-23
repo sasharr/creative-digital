@@ -10,6 +10,17 @@ $(document).ready(function () {
         // autoplaySpeed: 2000
     });
 
+
+    $('.team-slider').slick({
+        dots: true,
+        arrows: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        // autoplay: true,
+        // autoplaySpeed: 2000
+    });
+
     $("a").on('click touch', function (event) {
 
         // Make sure this.hash has a value before overriding default behavior

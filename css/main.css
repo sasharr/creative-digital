@@ -163,11 +163,43 @@ a {
   .hot-dog__heading {
     color: #fefcfd;
     font-weight: 600; }
+  .hot-dog__link {
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px 30px;
+    color: #ffffff;
+    font-family: "PT Sans",sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    border: 1px solid #ffffff;
+    transition: 1s; }
+    .hot-dog__link:hover {
+      color: #665f60;
+      border: 1px solid #665f60;
+      transition: 1s; }
 
 .hd-slider {
+  margin: 0 auto;
   max-width: 730px; }
   .hd-slider__photo {
     width: 100%;
     height: auto; }
+
+.our-team {
+  text-align: center;
+  padding: 2% 0; }
+
+.team-slider__slide {
+  margin: 0 10px;
+  background: linear-gradient(to bottom, #ebebeb 0%, #ebebeb 31%, #ffffff 31%, #ffffff 100%); }
+
+.team-slider__slide > img {
+  margin: 0 auto; }
+
+.sotials {
+  background: #9f9acf;
+  padding: 5px 10px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,21 @@
+.our-team {
+  text-align: center;
+  padding: 2% 0;
+}
+
+.team-slider {
+
+  &__slide {
+    margin: 0 10px;
+    background: linear-gradient(to bottom, #ebebeb 0%,#ebebeb 31%,#ffffff 31%,#ffffff 100%);
+  }
+}
+
+.team-slider__slide > img {
+  margin: 0 auto;
+}
+
+.sotials {
+  background: #9f9acf;
+  padding: 5px 10px;
+}
