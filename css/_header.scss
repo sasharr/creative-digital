@@ -5,9 +5,10 @@
   padding: 0 10%;
 }
 
-a {
+.svg-link {
   display: inline-block;
   width: 10%;
+  vertical-align: -webkit-baseline-middle
 }
 
 .header-list {
@@ -26,4 +27,13 @@ a {
     letter-spacing: 1px;
     text-transform: uppercase;
   }
+}
+#first {
+  fill:rgba(255, 255, 153, 0.73);
+}
+#second {
+  fill: rgba(240, 154, 107, 0.73);
+}
+#third {
+  fill: rgba(213, 94, 140, 0.73);
 }

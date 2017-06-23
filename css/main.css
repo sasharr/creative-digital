@@ -20,9 +20,10 @@ h2 {
   width: 100%;
   padding: 0 10%; }
 
-a {
+.svg-link {
   display: inline-block;
-  width: 10%; }
+  width: 10%;
+  vertical-align: -webkit-baseline-middle; }
 
 .header-list {
   display: inline-flex;
@@ -39,6 +40,15 @@ a {
     letter-spacing: 1px;
     text-transform: uppercase; }
 
+#first {
+  fill: rgba(255, 255, 153, 0.73); }
+
+#second {
+  fill: rgba(240, 154, 107, 0.73); }
+
+#third {
+  fill: rgba(213, 94, 140, 0.73); }
+
 .landing {
   background: url("../img/laptop.png");
   background-size: 100%;
@@ -49,7 +59,7 @@ a {
     font-family: "Proxima Nova",sans-serif;
     font-size: 72px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 75px;
     text-transform: uppercase; }
   .landing__text {
     width: 60%;
@@ -59,6 +69,9 @@ a {
     font-size: 30px;
     font-style: italic; }
 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 22px; } }
 .aboout-us {
   padding: 3% 0; }
 
@@ -230,6 +243,16 @@ a {
       vertical-align: sub; }
 
 footer {
-  background: #9f9acf; }
+  background: #9f9acf;
+  padding: 2% 0; }
+
+.license {
+  color: #ffffff;
+  font-family: "PT Sans",sans-serif;
+  font-size: 18px;
+  font-weight: 400; }
+
+footer .sotial {
+  text-align: right; }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,15 +8,21 @@
   font-family: "Proxima Nova",sans-serif;
   font-size: 72px;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 75px;
   text-transform: uppercase;
 }
   &__text {
     width: 60%;
-margin: 0 auto;
+    margin: 0 auto;
     color: #fefdfd;
     font-family: "PT Sans",sans-serif;
     font-size: 30px;
     font-style: italic;
   }
+}
+
+@media screen and (max-width: 600px) {
+h1 {
+  font-size: 22px;
+}
 }
