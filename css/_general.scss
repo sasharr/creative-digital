@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700');
-
+body {
+  overflow-x:hidden;
+}
 @font-face {
   font-family: sans-serif;
   src: url(../Proxima/ProximaNova-Bold.ttf);
@@ -11,6 +13,10 @@
 }
 main {
   background: #ebebeb;
+}
+
+* {
+  box-sizing: border-box;
 }
 h2 {
   font-family: "Proxima Nova",sans-serif;

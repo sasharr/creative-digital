@@ -47,8 +47,14 @@
     color: #9f9acf;
     font-size: 18px;
     margin: 0 2px;
+    transition: 2s;
     & i {
       vertical-align: sub;
+    }
+
+    &:hover {
+      transform: rotate(360deg) scale(1.10);
+      transition: transform 600ms;
     }
   }
 }
