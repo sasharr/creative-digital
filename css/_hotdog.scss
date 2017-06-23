@@ -1,0 +1,22 @@
+.hot-dog {
+  background: url("../img/works-bgbg-hotdog.png");
+  background-size: cover;
+  padding: 2% 0;
+  text-align: center;
+  &__heading {
+    color: #fefcfd;
+    font-weight: 600;
+  }
+}
+
+.hd-slider {
+  max-width: 730px;
+  &__slide {
+
+    //margin: 0 auto;
+  }
+  &__photo {
+    width: 100%;
+    height: auto;
+  }
+}

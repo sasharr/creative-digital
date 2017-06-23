@@ -1,0 +1,22 @@
+.landing {
+  background: url("../img/laptop.png");
+  background-size: 100%;
+  padding: 20% 0;
+  text-align: center;
+& h1 {
+  color: #fefefb;
+  font-family: "Proxima Nova",sans-serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+  &__text {
+    width: 60%;
+margin: 0 auto;
+    color: #fefdfd;
+    font-family: "PT Sans",sans-serif;
+    font-size: 30px;
+    font-style: italic;
+  }
+}
