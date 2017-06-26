@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $('.hd-slider').slick({
         dots: true,
-        arrows: false,
+        arrows: true,
         speed: 300,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -13,7 +13,7 @@ $(document).ready(function () {
 
     $('.team-slider').slick({
         dots: false,
-        arrows: false,
+        arrows: true,
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -21,7 +21,7 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         responsive: [
             {
-                breakpoint: 1000,
+                breakpoint: 1367,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2

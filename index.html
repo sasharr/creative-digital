@@ -31,14 +31,14 @@
             </svg>
         </a>
         <ul class="header-list">
-            <li class="header-list__list"><a href="#" class="header-list__link">Home</a></li>
-            <li class="header-list__list"><a href="#" class="header-list__link">About</a></li>
-            <li class="header-list__list"><a href="#" class="header-list__link">Services</a></li>
-            <li class="header-list__list"><a href="#" class="header-list__link">Works</a></li>
-            <li class="header-list__list"><a href="#" class="header-list__link">Contact</a></li>
+            <li class="header-list__list"><a href="" class="header-list__link">Home</a></li>
+            <li class="header-list__list"><a href="#about-cr" class="header-list__link">About</a></li>
+            <li class="header-list__list"><a href="#service" class="header-list__link">Services</a></li>
+            <li class="header-list__list"><a href="#team-cr" class="header-list__link">Works</a></li>
+            <li class="header-list__list"><a href="#contact" class="header-list__link">Contact</a></li>
         </ul>
     </header>
-    <section class="landing">
+    <section class="landing" id="home">
         <div class="container">
             <div class="row">
                 <h1 class="col-xs-12  col-sm-12  col-md-12  col-lg-12 ">CreativE DIGITAL Project</h1>
@@ -47,7 +47,7 @@
             </div>
         </div>
     </section>
-    <section class="aboout-us">
+    <section class="aboout-us" id="about-cr">
         <div class="container">
             <div class="row">
                 <div class="hidden-xs hidden-sm col-md-4 col-lg-4 column-left">
@@ -76,7 +76,7 @@
             </div>
         </div>
     </section>
-    <section class="grid">
+    <section class="grid" id="service">
         <div class="container">
             <div class="row">
                 <div class="wrapper col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -124,7 +124,7 @@
             </div>
         </div>
     </section>
-    <section class="our-team">
+    <section class="our-team" id="team-cr">
         <div class="container">
             <div class="row">
                 <img src="img/icon-teamhuman.png">
@@ -288,10 +288,30 @@
             </div>
         </div>
     </section>
-    <section class="in-touch">
+    <section class="in-touch" id="contact">
         <div class="container-fluid">
             <div class="row">
-
+<div id="map">
+</div>
+                <div class="map-mask">
+                    <img  class="in-touch__icon" src="img/layer-7geo.png">
+                    <h2 class="in-touch__heading">GET IN TOUCH</h2>
+                    <div class="home"><img class="home__icon" src="img/icon-addresshome.png">
+                    <p class="home__text">Ikan Piranha Atas 220C
+                        Malang - East Java
+                        Indonesia</p></div>
+                    <div class="phone"><img class="phone__icon" src="img/layer-8phone.png">
+                            <a class="phone__text" data-rel="external" href="tel:+380636120012" target="_blank">
+                                +380636120012</a>
+                           </div>
+                    <form action="#" method="post">
+                        <input class="name-box" type="text" name="name" placeholder="Your Name *">
+                        <input class="email-box" type="email" name="email" placeholder="Your Email *">
+                        <textarea class="message-box" placeholder="Your Message *"></textarea><br />
+                        <input  type="submit" value="SEND MESSAGE">
+                    </form>
+                </div>
+                </div>
             </div>
         </div>
     </section>
@@ -327,6 +347,9 @@
 </main>
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/slick.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbesRudq_J480ouVZVeZidnpi66maMN68&callback=initMap"
+        type="text/javascript"></script>
 <script src="js/map.js"></script>
 <script src="js/main.js"></script>
 <script src="https://use.fontawesome.com/37f5d03d4c.js"></script>

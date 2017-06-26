@@ -1,0 +1,193 @@
+.in-touch {
+
+  &__icon {
+    display: block;
+    margin: 0 auto;
+  }
+  &__heading {
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+#map {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  z-index: 5;
+}
+
+.map-mask {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  z-index: 6;
+  background: rgba(159, 154, 207, 0.7);
+  padding: 3% 1%;
+}
+
+form {
+  max-width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input {
+  border: none;
+  display: inline-block;
+  height: 56px;
+  border-radius: 4px 3px 3px 4px;
+  background-color: rgba(235, 235, 235, 0.5);
+  opacity: 1;
+  width: 49%;
+  padding: 1%;
+  font-family: "PT Sans",sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 18px;
+}
+
+::-webkit-input-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.email-box {
+  margin-left: 1%;
+}
+
+input:focus {
+  opacity: .8;
+}
+
+textarea {
+  border: none;
+  height: 200px;
+  margin: 25px 0;
+  border-radius: 4px 3px 3px 4px;
+  background-color: rgba(235, 235, 235, 0.5);
+  opacity: 1;
+  padding: 1%;
+  font-family: "PT Sans",sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 18px;
+  width: 100%;
+}
+
+textarea:focus {
+  opacity: .8;
+}
+
+input[type=submit] {
+  margin: 0 auto;
+  width: 54%;
+  padding: 2%;
+  height: 70px;
+  background: #9f9acf;;
+  color: #FFFFFF;
+}
+
+//home
+.home {
+  position: absolute;
+  right: 0;
+  top:0;
+  text-align: right;
+  width: 20%;
+  transform: translateX(60%);
+  transition: 2s;
+  overflow:hidden;
+  &:hover {
+    transform: translateX(-10%);
+    transition: 2s;
+  }
+  &__icon {
+    display: inline-block;
+    background: #9f9acf;
+    width: 91px;
+    height: 91px;
+    padding: 4%;
+  }
+  &__text {
+    display: inline-block;
+    width: 60%;
+    height: 91px;
+    vertical-align: middle;
+    padding: 4%;
+    margin: 0;
+    text-align: center;
+    color: #665f60;
+    font-family: "PT Sans",sans-serif;
+    background-color: #ebebeb;
+    opacity: 0.5;
+
+  }
+}
+
+.phone {
+  position: absolute;
+  right: 0;
+  top:100px;
+  text-align: right;
+  width: 20%;
+  transform: translateX(60%);
+  transition: 2s;
+  overflow:hidden;
+  &:hover {
+    transform: translateX(-10%);
+    transition: 2s;
+  }
+  &__icon {
+    display: inline-block;
+    background: #9f9acf;
+    width: 91px;
+    height: 91px;
+    padding: 10px 23px;
+  }
+  &__text {
+    display: inline-block;
+    width: 60%;
+    height: 91px;
+    vertical-align: middle;
+    padding: 4%;
+    margin: 0;
+    text-align: center;
+    color: #665f60;
+    font-family: "PT Sans",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 3;
+    background-color: #ebebeb;
+    opacity: 0.5;
+
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+}
+
+@media only screen  and (max-device-width : 1367px) and (orientation : landscape) {
+  .home {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  input {
+    width: 100%;
+  }
+  .email-box {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+}

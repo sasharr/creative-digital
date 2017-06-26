@@ -113,6 +113,30 @@
     content: url("../img/grey-left.png");
 }
 
+@media screen and (max-width: 1367px) {
+    .slick-prev {
+        right: 0;
+        left: 0;
+        display: none;
+    }
+    .slick-next {
+        right: 0;
+        left: 0;
+        display: none;
+    }
+    .slick-next:before {
+        right: 0;
+        left: 0;
+        display: none;
+    }
+    .slick-prev:before {
+        right: 0;
+        left: 0;
+        display: none;
+    }
+}
+
+
 /* Dots */
 .slick-dotted.slick-slider
 {
