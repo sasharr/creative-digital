@@ -324,7 +324,7 @@ h2 {
       padding-right: 1px;
       padding-top: 5px; }
     .sotial__link:hover {
-      transform: rotate(360deg) scale(1.1);
+      transform: rotate(360deg) scale(1.3);
       transition: transform 600ms; }
 
 .in-touch {
@@ -337,24 +337,30 @@ h2 {
     text-align: center;
     color: #ffffff; }
 
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background: #bdb9cd;
+  opacity: 0.8;
+  z-index: 6; }
+
 #map {
   position: absolute;
   width: 100%;
   height: 700px;
-  z-index: 5; }
+  opacity: 0.9;
+  z-index: 0; }
 
-.map-mask {
-  width: 100%;
-  height: 700px;
-  position: relative;
-  z-index: 6;
-  background: rgba(159, 154, 207, 0.7);
-  padding: 3% 1%; }
-
-form {
-  max-width: 50%;
-  margin: 0 auto;
-  text-align: center; }
+#form {
+  position: absolute;
+  width: 500px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 20px; }
 
 input {
   border: none;
@@ -418,7 +424,8 @@ input[type=submit] {
   width: 20%;
   transform: translateX(60%);
   transition: 2s;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 10; }
   .home:hover {
     transform: translateX(-10%);
     transition: 2s; }
@@ -449,7 +456,8 @@ input[type=submit] {
   width: 20%;
   transform: translateX(60%);
   transition: 2s;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 10; }
   .phone:hover {
     transform: translateX(-10%);
     transition: 2s; }
