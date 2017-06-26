@@ -1,5 +1,6 @@
 .in-touch {
-
+max-width: 2500px;
+  overflow-x: hidden;
   &__icon {
     display: block;
     margin: 0 auto;
@@ -86,6 +87,12 @@ input[type=submit] {
   height: 70px;
   background: #9f9acf;;
   color: #FFFFFF;
+  opacity: 0.7;
+  transition: 1s;
+  &:hover {
+opacity: 1;
+    transition: 1s;
+  }
 }
 
 //home
@@ -191,3 +198,11 @@ input[type=submit] {
     margin-top: 25px;
   }
 }
+
+@media screen and (max-width: 609px) {
+  input[type=submit] {
+    width: 100%;
+  }
+
+}
+

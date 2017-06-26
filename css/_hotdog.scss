@@ -10,18 +10,18 @@
   &__link {
     display: block;
     width: 30%;
-    margin: 0 auto;
+    margin: 70px auto 20px;
     text-align: center;
     padding: 15px 30px;
     color: #ffffff;;
     font-family: "PT Sans",sans-serif;
     font-size: 20px;
     font-style: italic;
-    border: 1px solid #ffffff;;
+    border: 1px solid #ffffff;
     transition: 1s;
     &:hover {
-      color: #665f60;
-      border: 1px solid #665f60;
+      border: 3px solid #ffffff;
+      padding: 13px 28px;
       transition: 1s;
     }
   }
@@ -39,8 +39,8 @@
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 609px) {
   .hot-dog__link {
-    width: 40%;
+    width: 60%;
   }
 }

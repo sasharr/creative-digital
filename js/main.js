@@ -59,5 +59,13 @@ $(document).ready(function () {
         } // End if
     });//smoth scroll
 
+
+    $(document).foundation();
+
+    $(window).scroll(function (e) {
+        var height = $(this).scrollTop();
+        var section = document.getElementById('home').offsetHeight;
+        $('.general-header')[height >= section ? 'addClass' : 'removeClass']('active-header')
+    });
 });
 

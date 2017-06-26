@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/bootstrap-grid-3.3.1.min.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -38,7 +39,7 @@
             <li class="header-list__list"><a href="#contact" class="header-list__link">Contact</a></li>
         </ul>
     </header>
-    <section class="landing" id="home">
+    <section class="landing" id="home" data-magellan-target="home">
         <div class="container">
             <div class="row">
                 <h1 class="col-xs-12  col-sm-12  col-md-12  col-lg-12 ">CreativE DIGITAL Project</h1>
@@ -47,7 +48,7 @@
             </div>
         </div>
     </section>
-    <section class="aboout-us" id="about-cr">
+    <section class="aboout-us" id="about-cr" data-magellan-target="about-cr">
         <div class="container">
             <div class="row">
                 <div class="hidden-xs hidden-sm col-md-4 col-lg-4 column-left">
@@ -76,7 +77,7 @@
             </div>
         </div>
     </section>
-    <section class="grid" id="service">
+    <section class="grid" id="service" data-magellan-target="service">
         <div class="container">
             <div class="row">
                 <div class="wrapper col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -107,7 +108,7 @@
             </div>
         </div>
     </section>
-    <section class="hot-dog">
+    <section class="hot-dog" id="hotdog" data-magellan-target="hotdog">
         <div class="container">
             <div class="row">
                 <img src="img/icon-workspen.png">
@@ -288,7 +289,7 @@
             </div>
         </div>
     </section>
-    <section class="in-touch" id="contact">
+    <section class="in-touch" id="contact" data-magellan-target="contact">
         <div class="container-fluid">
             <div class="row">
 <div id="map">
@@ -304,6 +305,7 @@
                             <a class="phone__text" data-rel="external" href="tel:+380636120012" target="_blank">
                                 +380636120012</a>
                            </div>
+
                     <form action="#" method="post">
                         <input class="name-box" type="text" name="name" placeholder="Your Name *">
                         <input class="email-box" type="email" name="email" placeholder="Your Email *">
@@ -313,9 +315,21 @@
                 </div>
                 </div>
             </div>
-        </div>
     </section>
     <footer>
+        <div data-sticky-container>
+            <div class="sticky" data-sticky stickTo="top" data-margin-top="0">
+                <nav class="top-bar" data-magellan data-options="barOffset:30;" activeClass="active">
+                    <ul class="vertical menu expanded">
+                        <li><a href="#home" class="pink">1</a></li>
+                        <li><a href="#about-cr" class="orange">2</a></li>
+                        <li><a href="#service" class="yellow">3</a></li>
+                        <li><a href="#hotdog" class="green">4</a></li>
+                        <li><a href="#contact" class="blue">5</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <p class="license col-xs-12 col-sm-6 col-md-6 col-lg-6">©2014 tulusdriyo. All Rights Reserved.</p>
@@ -351,6 +365,7 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbesRudq_J480ouVZVeZidnpi66maMN68&callback=initMap"
         type="text/javascript"></script>
 <script src="js/map.js"></script>
+<script src="js/foundation.min.js"></script>
 <script src="js/main.js"></script>
 <script src="https://use.fontawesome.com/37f5d03d4c.js"></script>
 </body>

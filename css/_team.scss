@@ -9,21 +9,21 @@
 
 .team-slider {
 
-&__heading {
-  color: #9f9acf;
-  font-family: "Proxima Nova",sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-}
+  &__heading {
+    color: #9f9acf;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+  }
   &__text {
     color: #665f60;
-    font-family: "PT Sans";
+    font-family: "PT Sans",sans-serif;
     font-size: 24px;
     font-style: italic;
   }
   &__slide {
     margin: 0 10px;
-    background: linear-gradient(to bottom, #ebebeb 0%,#ebebeb 31%,#ffffff 31%,#ffffff 100%);
+    background: linear-gradient(to bottom, #ebebeb 0%, #ebebeb 31%, #ffffff 31%, #ffffff 100%);
   }
 }
 
@@ -49,9 +49,25 @@
     margin: 0 2px;
     transition: 2s;
     & i {
-      vertical-align: sub;
+      vertical-align: middle;
     }
-
+    &--linked > .fa {
+      padding-top: 4px;
+    }
+    &--behance > .fa {
+      padding-top: 4px;
+    }
+    &--google > .fa {
+      padding-top: 5px;
+    }
+    &--facebook > .fa {
+      padding-right: 2px;
+      padding-top: 5px;
+    }
+    &--twitter > .fa {
+      padding-right: 1px;
+      padding-top: 5px;
+    }
     &:hover {
       transform: rotate(360deg) scale(1.10);
       transition: transform 600ms;
