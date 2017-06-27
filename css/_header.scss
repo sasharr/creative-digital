@@ -5,13 +5,15 @@
   padding: 0 10%;
 }
 
+svg {
+  cursor: pointer;
+}
+
 .svg-link {
   display: inline-block;
   width: 10%;
   vertical-align: -webkit-baseline-middle;
 }
-
-
 
 .header-list {
   display: inline-flex;
@@ -69,12 +71,18 @@
 
 #first {
   fill:rgba(255, 255, 153, 0.73);
+  animation: fadeIn 5s infinite ease-in;
+  animation-delay: 0.5s;
 }
 #second {
   fill: rgba(240, 154, 107, 0.73);
+  animation: fadeIn 5s infinite ease-in;
+  animation-delay: 0.6s;
 }
 #third {
   fill: rgba(213, 94, 140, 0.73);
+  animation: fadeIn 5s infinite ease-in;
+  animation-delay: 0.7s;
 }
 
 @media screen and (max-width: 742px) {
