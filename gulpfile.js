@@ -16,10 +16,10 @@ gulp.task('imagemin', function () {
 });
 
 gulp.task('autoprefixer', function () {
-    gulp.src('app/**/main-pref.css')
+    gulp.src('css/**/page-pref.css')
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('dist/main-pref.css'))
+        .pipe(gulp.dest('dist/page-pref.css'))
 });
