@@ -96,9 +96,10 @@ svg {
   animation: fadeIn 5s infinite ease-in;
   animation-delay: 0.7s; }
 
-@media screen and (max-width: 742px) {
+@media screen and (max-width: 1202px) {
   .header-list {
-    display: none; } }
+    width: 100%;
+    justify-content: center; } }
 .landing {
   background: url("../img/laptop.png");
   background-size: 100%;

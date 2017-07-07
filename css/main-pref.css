@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700");
-body {
-  overflow-x: hidden; }
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 @font-face {
   font-family: sans-serif;
-  src: url(../../Proxima/ProximaNova-Bold.ttf); }
+  src: url(../Proxima/ProximaNova-Bold.ttf); }
 @font-face {
   font-family: sans-serif;
-  src: url(../../Proxima/ProximaNova-Semibold.ttf); }
+  src: url(../Proxima/ProximaNova-Semibold.ttf); }
 main {
   background: #ebebeb; }
 
@@ -27,12 +26,25 @@ h2 {
   width: 100%;
   padding: 0 10%; }
 
-svg {
-  cursor: pointer; }
+.outline{
+  font-size: 50px;
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 1px;
+  stroke: #E5E5E5;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  -webkit-animation:drawOutline 10s linear infinite;
+}
+
+@-webkit-keyframes drawOutline{
+  0%{ stroke-dashoffset: 300; stroke: #f6f6f6; }
+  50%{ stroke-dashoffset: 0; stroke: #f6f6f6; }
+  60%{ stroke-dashoffset: 0; stroke: #f6f6f6; }
+  99%{ stroke-dashoffset: 300; stroke: #f6f6f6; }}
 
 .svg-link {
   display: inline-block;
-  width: 10%;
+  width: 34%;
   vertical-align: -webkit-baseline-middle;
   vertical-align: middle; }
 
@@ -40,7 +52,7 @@ svg {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 89%;
+  width: 65%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
@@ -89,30 +101,22 @@ svg {
 .active-header {
   background: rgba(159, 154, 207, 0.54); }
 
-#first {
-  fill: rgba(255, 255, 153, 0.73);
-  -webkit-animation: fadeIn 5s infinite ease-in;
-  animation: fadeIn 5s infinite ease-in;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 7s; }
-
-#second {
-  fill: rgba(240, 154, 107, 0.73);
-  -webkit-animation: fadeIn 5s infinite ease-in;
-  animation: fadeIn 5s infinite ease-in;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 7.1s; }
-
-#third {
-  fill: rgba(213, 94, 140, 0.73);
-  -webkit-animation: fadeIn 5s infinite ease-in;
-  animation: fadeIn 5s infinite ease-in;
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 7.2s; }
-
-@media screen and (max-width: 742px) {
+@media screen and (max-width: 1202px) {
   .header-list {
-    display: none; } }
+    width: 100%;
+    justify-content: center;
+  }
+
+  .svg-link {
+    display: block;
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .general-header {
+    padding: 0 1%; }
+}
 .landing {
   background: url("../img/laptop.png");
   background-size: 100%;
@@ -637,45 +641,31 @@ footer .sotial {
   top: 40%;
   z-index: 100; }
 
-.pink,
-.orange,
-.yellow,
-.green,
-.blue {
+.expanded__link {
   display: block;
   width: 40px;
   height: 40px;
+  background: #ebebeb;
   border-radius: 100%;
   margin: 5px 0;
-  color: white;
+  color: #9f9acf;
   text-align: center;
   font-size: 20px;
   font-weight: 900;
-  padding-top: 3px; }
+  padding-top: 4px;
+}
 
-.pink {
-  background-color: rgba(213, 94, 140, 0.73); }
+.expanded__link:hover {
+  -webkit-transform: rotate(360deg) scale(1.2);
+  transform: rotate(360deg) scale(1.2);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms; }
 
-.yellow {
-  background: rgba(255, 255, 153, 0.73);
-  padding-top: 5px; }
-
-.orange {
-  background: rgba(240, 154, 107, 0.73);
-  padding-top: 4px; }
-
-.green {
-  background: rgba(102, 255, 102, 0.54);
-  padding-top: 5px; }
-
-.blue {
-  background: rgba(127, 127, 255, 0.54);
-  padding-top: 5px; }
 
 .active {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  border: 2px solid grey;
-  padding-top: 3px;
   -webkit-transition: 1s;
   transition: 1s; }

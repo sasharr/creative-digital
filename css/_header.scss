@@ -86,8 +86,9 @@ svg {
   animation-delay: 0.7s;
 }
 
-@media screen and (max-width: 742px) {
+@media screen and (max-width: 1202px) {
   .header-list {
-    display: none;
+    width: 100%;
+    justify-content:center;
   }
 }
